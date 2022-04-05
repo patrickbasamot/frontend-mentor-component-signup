@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color:hsl(0, 100%, 74%) ;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    background: url(./images/bg-intro-desktop.png);
+    justify-content: center;
+    align-items: center;
+}
+.header-component{
+    width: 350px;
+    margin-right: 100px;
+}
+h1{
+    margin-bottom: 20px;
+}
+.header-para{
+    line-height: 25px;
+}
+.reminder{
+    margin-bottom: 10px;
+    padding: 20px 65px 20px 65px;
+    border-radius: 12px;
+    font-size: 1em;
+    background-color: blueviolet;
+
+}
+.inputIcon{
+    position: relative;
+}
+.inputIcon img{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding: 10px 15px 10px 10px;
+}
+.column-component{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.input-component{
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+}
+.condition{
+    font-size: 10px;
+    color: black;
+}
+.terms,.errorText{
+    color: red;
+}
+.errorText{
+    text-align: end;
+    font-size: 10px;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+input,button {
+    height: 50px;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    width: 400px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size:0.8em;
+    border: 1px solid gray;
+}
+
+button{
+    background-color:hsl(154, 59%, 51%);
+    color: white;
+    border: transparent;
+ 
+}
+input::placeholder{
+    color: gray;
+}
+
+
+@media(max-width:525px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        height: auto;
+        margin: 70px;
+    }
+    .header-component{
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    /* .input-component{
+        width: auto;
+
+    } */
+    input,button {
+        height: 50px;
+        margin: 5px 0 5px 0;
+        width: 350px;
+        font-weight: bold;
+        border-radius: 8px;
+        font-size:0.8em;
+        border: 1px solid gray;
+    }
+    .reminder{
+        margin-bottom: 10px;
+        width: auto;
+        margin-top: 50px;
+        text-align: center;
+        border-radius: 12px;
+        font-size: 1em;
+        background-color: blueviolet;
+    
+    }
+}
