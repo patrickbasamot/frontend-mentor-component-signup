@@ -111,10 +111,11 @@ input::placeholder{
         width: auto;
 
     } */
+
     input,button {
         height: 50px;
         margin: 5px 0 5px 0;
-        width: 350px;
+        width: 275px;
         font-weight: bold;
         border-radius: 8px;
         font-size:0.8em;
@@ -127,6 +128,52 @@ input::placeholder{
         text-align: center;
         border-radius: 12px;
         font-size: 1em;
+        background-color: blueviolet;
+    
+    }
+}
+
+@media (max-width:325px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        height: auto;
+        margin: 70px;
+    }
+    .header-component{
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    /* .input-component{
+        width: auto;
+
+    } */
+    h1{
+        font-size: 1.4em;
+    }
+    .header-para{
+        font-size: 0.8em;
+    }
+
+    input,button {
+        height: 50px;
+        margin: 5px 0 5px 0;
+        width: 200px;
+        font-weight: bold;
+        border-radius: 8px;
+        font-size:0.8em;
+        border: 1px solid gray;
+    }
+    .reminder{
+        margin-bottom: 10px;
+        width: auto;
+        margin-top: 50px;
+        text-align: center;
+        border-radius: 12px;
+        font-size: 0.8em;
         background-color: blueviolet;
     
     }
